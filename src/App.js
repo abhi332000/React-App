@@ -1,5 +1,5 @@
 import './App.css';
-import About from './components/About';
+// import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React, { useState } from 'react';
@@ -18,8 +18,8 @@ function App() {
     <>
       <Navbar title="Title" about="About" mode ={mode} checkMode={checkMode}/>
       <div className="container my-3">
-        {/* <TextForm heading="Enter the text to analyze below" mode = {mode}/> */}
-        <About />
+        <TextForm heading="Enter the text to analyze below" mode = {mode}/>
+        {/* <About /> */}
       </div>
     </>
   );
